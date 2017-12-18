@@ -33,7 +33,7 @@ import ChatIO from 'react-chatio'
 <ChatIO license={your_license_id} />
 ```
 
-*You can change chat appearance [here](https://app.chat.io/settings/chat-window-customization)*.
+*You can change your chat appearance [here](https://app.chat.io/settings/chat-window-customization)*.
 
 ### Methods
 
