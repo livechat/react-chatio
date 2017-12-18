@@ -1,0 +1,29 @@
+{
+  "name": "react-chatio",
+  "version": "1.0.11",
+  "description": "React component to integrate Chat.io with your single-page app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livechat/react-chatio.git"
+  },
+  "keywords": [
+    "react",
+    "chat",
+    "chatio",
+    "component",
+    "livechat"
+  ],
+  "author": "Venits",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/livechat/react-chatio/issues"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "homepage": "https://github.com/livechat/react-chatio#readme"
+}
