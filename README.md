@@ -22,7 +22,7 @@ To import chat.io for React, run the following command:
 npm install react-chatio --save
 ```
 
-### User guide
+## User guide
 
 ### Start
 
@@ -104,5 +104,5 @@ Let's say that you want to get notified when a user opens the chat:
 ### Support
 In case of any problem you can chat with us [here](https://www.chat.io/live-chat-guide/).
 
-**I hope you will find this module useful. Happy Coding :)**
+**I hope you will find this module useful. Happy coding :)**
 
