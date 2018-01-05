@@ -1,30 +1,33 @@
-﻿# React Chat.io
+# Chat.io for React
 
-React component to integrate your application with Chat.io easily ;)
+This is a React component to easily add [chat.io widget](https://www.chat.io/) to your application.
 
-*You can start your 14 days free trial [here](https://www.chat.io/).*
+## Getting Started
 
-### Pre requirements:
+### Prerequisites
 
-To use Chat.io in your application you need **license_id**. 
+To use chat.io in your React application, you will need a chat.io license ID. 
 
-You get one after creating account on our [website](https://www.chat.io/).
+If you already have a chat.io account, get your **license_id** [here](https://app.chat.io/settings/channel-website).
 
-You can check your **license_id** anytime [here](https://app.chat.io/settings/channel-website).
+![Chat.io license ID](https://raw.githubusercontent.com/livechat/react-chatio/master/chatio_license.png)
 
-*If you have difficulties finding your **license_id** please take a look at this [screenshot](https://github.com/livechat/react-chatio/blob/master/chatio_license.png).*
+If you don't have an account, you can create one [here](https://www.chat.io/).
 
 ### Installation
-All you have to do:
+
+To import chat.io for React, run the following command:
+
 ```javascript
 npm install react-chatio --save
 ```
 
-### Usage
+### User guide
 
-Usage is very simple:
+### Start
 
-*Import ChatIO component and put it in your render method:*
+Having imported chat.io for React, put it in your render method:
+
 ```javascript
 import ChatIO from 'react-chatio'
 
@@ -33,13 +36,14 @@ import ChatIO from 'react-chatio'
 <ChatIO license={your_license_id} />
 ```
 
-*You can change your chat appearance [here](https://app.chat.io/settings/chat-window-customization)*.
+### Customization
+
+You can change the look and feel of your chat widget in [Chat window customization](https://app.chat.io/settings/chat-window-customization) section.
 
 ### Methods
 
-To begin with, you want to get your chat reference using **onChatLoaded** callback.
+To begin with, get your chat reference using `onChatLoaded` callback:
 
-*Example:*
 ```javascript
 <ChatIO 
   onChatLoaded={ ref => this.chatio = ref }
@@ -47,20 +51,19 @@ To begin with, you want to get your chat reference using **onChatLoaded** callba
 />
 ```
 
-Using this reference you can for example hide chat window:
+With this reference you can, for example, hide the chat window:
 
-*Example:*
 ```javascript
 this.chatio.hide_chat_window();
-// is same as:
+// is the same as:
 window.CHAT_API.hide_chat_window();
 ```
 
-*Table of all available methods:*
+#### Available methods
 
 |Name|Note|
 |---|---|
-| close_chat | Closes an ongoing chat. |
+| close_chat | Closes the ongoing chat. |
 | disable_sounds | Mutes all sounds in the chat window on visitor's side (not supported with the pop-up chat window). |
 | open_chat_window | Maximizes the chat window (when using the embedded chat window) or opens the chat window (when using the pop-up window).|
 | minimize_chat_window | Minimizes the chat window (not supported with the pop-up chat window). |
@@ -72,11 +75,12 @@ window.CHAT_API.hide_chat_window();
 | visitor_queued | Returns true if the visitor is currently waiting in the queue, returns false otherwise. |
 |chat_running | Returns true if the visitor is currently chatting with an agent, returns false otherwise. |
 
-
 ### Callbacks
-*To make your code cleaner and life easier our component gives you easy way to control chat callbacks.*
 
-Lets say you want to get notified when user opens the chat:
+Chat.io React component gives you the option to control chat callbacks.
+
+Let's say that you want to get notified when a user opens the chat:
+
 ```javascript
 <ChatIO
   ...
@@ -84,7 +88,7 @@ Lets say you want to get notified when user opens the chat:
 />
 ```
 
-*Table of all available callbacks:*
+#### Available callbacks
 
 |Name|Note|
 |---|---|
