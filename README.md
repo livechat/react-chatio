@@ -101,8 +101,7 @@ Let's say that you want to get notified when a user opens the chat:
 | onChatStarted  | Executed when the chat is started.  |
 | onChatEnded  |  Executed when the chat is ended. |
 
-### Support
-In case of any problem you can chat with us [here](https://www.chat.io/live-chat-guide/).
+## Support
+If you need any help, you can chat with us [here](https://www.chat.io/live-chat-guide/).
 
 **I hope you will find this module useful. Happy coding :)**
-
